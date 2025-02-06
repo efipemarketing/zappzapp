@@ -6,7 +6,7 @@ export default function AboutUs(){
 		<section id="about-us" className="container">
 			<SectionTitle
 				title="Sobre Nós"
-				subTitle="Aqui você conhece um pouco mais sobre nossa a empresa."
+				subTitle="Aqui você conhece um pouco mais sobre a nossa Empresa."
 			/>
 
 			<article className="my-5 color-medium">
