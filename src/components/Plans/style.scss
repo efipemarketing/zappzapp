@@ -1,0 +1,67 @@
+@import "./../../styles/variables";
+#plans{
+    .row-plan-cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .plan-card{
+            position: relative;
+            border-radius: 8px;
+            margin: 0 2.5rem 5rem;
+
+            max-width: 318px;
+            min-width: 250px;
+
+            transition: all .5s;
+
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.active:before{
+                content: "";
+                position: absolute;
+                width: 180px;
+                height: 140%;
+                background: linear-gradient($color-primary, $color-secondary);
+                animation: animate 5s linear infinite
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                inset: 4px;
+                border-radius: 4px;
+                background: $color-dark;
+            }
+
+            .content{
+                padding: 2rem 2.5rem;
+                z-index: 1;
+                .amount-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: baseline;
+                }
+                ul{ font-size: 1.5rem; }
+            }
+
+            &.active{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+@media (max-width: 980px){
+    .row-plan-cards{
+        flex-wrap: wrap;
+    }
+    .active{ transform: scale(1)!important; }
+}
+@media (max-width: 920px){
+    .active{ transform: scale(1.1)!important; }
+}
+@keyframes animate {
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}

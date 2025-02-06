@@ -1,0 +1,25 @@
+[{
+	"icon": "/img/icons/cloud.png",
+	"title": "Atendimento 24h",
+	"description": "oferecemos suporte contínuo, disponível a qualquer hora do dia, sete dias por semana. Nosso objetivo é garantir que os clientes ou usuários recebam assistência imediata sempre que necessário, independentemente de horários comerciais"
+},{
+	"icon": "/img/icons/big-data&analytics.png",
+	"title": "Crie Metas & Lembretes",
+	"description": "permite que os usuários estabeleçam objetivos e definam lembretes para se manterem organizados e produtivos. Ele ajuda a planejar tarefas, acompanhar progresso e garantir que prazos importantes sejam cumpridos."
+},{
+	"icon": "/img/icons/cloud-computing.png",
+	"title": "Organize sua vida Financeira",
+	"description": "ajudamos os usuários a planejar, controlar e otimizar suas finanças pessoais. Oferecemos ferramentas e orientações para a gestão de receitas, despesas, investimentos e dívidas, permitindo um melhor controle do orçamento e ajudando a alcançar objetivos financeiros de curto e longo prazo."
+},{
+	"icon": "/img/icons/iot.png",
+	"title": "Relatorios Semanais & Mensais",
+	"description": "oferecemos a geração de relatórios detalhados e personalizados sobre o desempenho de atividades, projetos ou finanças, seja de forma semanal ou mensal."
+},{
+	"icon": "/img/icons/front-end.png",
+	"title": "Otimização de Tempo",
+	"description": "focamos em ajudar os usuários a gerenciar melhor suas atividades diárias, aumentando a produtividade e reduzindo o desperdício de tempo."
+},{
+	"icon": "/img/icons/back-end.png",
+	"title": "Sistema de Afiliados ",
+	"description": "permitimos que indivíduos ou empresas ganhem comissões ao promover nosso produto. Através do sistema, os afiliados recebem um link exclusivo para divulgar e, sempre que alguém realizar uma compra ou ação específica por meio desse link, o afiliado recebe uma comissão."
+}]

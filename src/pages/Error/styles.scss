@@ -1,0 +1,14 @@
+@import "./../../styles/variables";
+
+#error-page{
+	.container{
+        height: calc(100vh - 61px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.error-title{
+		margin: 20px 0;
+		font-size: 5rem;
+	}
+}

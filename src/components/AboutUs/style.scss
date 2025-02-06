@@ -1,0 +1,7 @@
+#about-us{
+    p{
+        font-size: 2rem;
+        &:not(:last-child){ margin-bottom: 1.5rem; }
+    }
+    button{ height: 5rem; max-width: 35rem; }
+}

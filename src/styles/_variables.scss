@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Rajdhani&display=swap');
+$color-white: #fff;
+
+$color-primary: #B026FF;
+$color-primary-contrast: #ffffff;
+
+$color-secondary: #8980FF;
+$color-secondary-contrast: #ffffff;
+
+$color-green: #15CB76;
+$color-green-contrast: #ffffff;
+
+$color-red: #E61B41;
+$color-red-contrast: #ffffff;
+
+$color-yellow: #F9DC48;
+$color-yellow-contrast: #ffffff;
+
+$color-light: #FAFBFF;
+$color-light-contrast: #191D28;
+
+$color-medium: #9F9F9F;
+$color-medium-contrast: #ffffff;
+
+$color-dark: #191D28;
+$color-dark-contrast: #ffffff;
+
+$bg-dark: #030917;
+$bg-dark-contrast: #ffffff;
+
+$input-color: #5E616D;
+/*********************************************
+* COLORS
+*********************************************/ 
+.text-primary-gradient{
+	background: linear-gradient(90deg, $color-primary 0%, $color-secondary 100%);
+	font-weight: bold;
+ 	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+.color-primary {
+    color: $color-primary;
+    .color-fill > path{ fill: $color-primary; }
+    .color-stroke > path{ stroke: $color-primary; }
+}
+.color-secondary {
+    color: $color-secondary;
+    .color-fill > path{ fill: $color-secondary; }
+    .color-stroke > path{ stroke: $color-secondary; }
+}
+.color-green {
+    color: $color-green;
+    .color-fill > path{ fill: $color-green; }
+    .color-stroke > path{ stroke: $color-green; }
+}
+.color-yellow {
+    color: $color-yellow;
+    .color-fill > path{ fill: $color-yellow; }
+    .color-stroke > path{ stroke: $color-yellow; }
+}
+.color-red {
+    color: $color-red;
+    .color-fill > path{ fill: $color-red; }
+    .color-stroke > path{ stroke: $color-red; }
+}
+.color-dark {
+    color: $color-dark;
+    .color-fill > path{ fill: $color-dark; }
+    .color-stroke > path{ stroke: $color-dark; }
+}
+.color-medium {
+    color: $color-medium;
+    .color-fill > path{ fill: $color-medium; }
+    .color-stroke > path{ fill: $color-medium; }
+}
+
+.color-medium-contrast{color: $color-medium-contrast;}
+
+.color-light {
+    color: $color-light;
+    .color-fill > path{ fill: $color-light; }
+    .color-stroke > path{ stroke: $color-light; }
+}
+.color-white {
+    color: #FAFBFF;
+    .color-fill > path{ fill: #FFFFFF; }
+    .color-stroke > path{ stroke: #FFFFFF; }
+}
+/***************
+* BUTTON
+***************/ 
+button{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+
+	text-align: center;
+	font: bold 1.6rem 'Rajdhani';
+	cursor: pointer;
+	color: $color-primary-contrast;
+
+	height: calc(1.15em + 2rem + .2rem);
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	background: linear-gradient(90deg, $color-primary 0%, $color-secondary 100%);
+	background-clip: padding-box;
+	border: .1rem solid transparent;
+	padding: .375rem .75rem;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	
+	border-radius: 1.6rem;
+
+	&:disabled{ cursor: no-drop; opacity: .75; }
+	&:focus:not(:disabled){ outline: none !important; box-shadow: none !important; }
+
+	&:after {
+		background: #fff;
+		content: "";
+		height: 15.5rem;
+		left: -7.5rem;
+		opacity: .2;
+		position: absolute;
+		top: -5rem;
+		transform: rotate(35deg);
+		transition: all 1.5s cubic-bezier(.19, 1, .22, 1);
+		width: 5rem;
+	}
+	&:hover:not(:disabled){ 
+		&:after {
+			left: calc(100% + 5rem);
+			transition: all 1.5s cubic-bezier(.19, 1, .22, 1);
+		}
+	}
+	
+	&.light-outline {
+		color: $color-light; background: transparent; border-color: currentColor;
+
+		.color-fill > path{ fill: $color-light; }
+    	.color-stroke > path{ stroke: $color-light; }
+
+		&:hover{
+			color: $color-light-contrast; background: $color-light; border-color: transparent;
+
+			.color-fill > path{ fill: $color-light-contrast; }
+			.color-stroke > path{ stroke: $color-light-contrast; }
+		}
+	}
+
+	svg{
+		vertical-align: middle;
+		display: inline-block;
+		margin-bottom: .25rem;
+	}
+}
+/*********************************************
+* BACKGROUND
+*********************************************/ 
+.bg-primary { background-color: $color-primary; }
+.bg-secondary { background-color: $color-secondary; }
+.bg-green { background-color: $color-green; }
+.bg-yellow { background-color: $color-yellow; }
+.bg-red { background-color: $color-red; }
+.bg-dark { background-color: $color-dark; }
+.bg-medium { background-color: $color-medium; }
+.bg-light { background-color: $color-light; }
+.bg-white { background-color: #FFFFFF; }
+.bg-cinza{background-color:$input-color}
+.bg-transparent {background: transparent;}
+/*********************************************
+* HEIGHT
+*********************************************/
+.h-25{ height: 25%!important; }
+.h-50{ height: 50%!important; }
+.h-75{ height: 75%!important; }
+.h-95{ height: 95%!important; }
+.h-100{ height: 100%!important; }
+.h-auto{ height: auto!important; }
+/*********************************************
+* WIDTH
+*********************************************/
+.w-25{ width: 25%!important; }
+.w-50{ width: 50%!important; }
+.w-70{ width: 70%!important; }
+.w-75{ width: 75%!important; }
+.w-100{ width: 100%!important; }
+.w-auto{ width: auto!important; }
+/*********************************************
+* MARGIN
+*********************************************/ 
+.m-0{margin:0!important}
+.mt-0,.my-0{margin-top:0!important}
+.mr-0,.mx-0{margin-right:0!important}
+.mb-0,.my-0{margin-bottom:0!important}
+.ml-0,.mx-0{margin-left:0!important}
+.m-1{margin:.25rem!important}
+.mt-1,.my-1{margin-top:.25rem!important}
+.mr-1,.mx-1{margin-right:.25rem!important}
+.mb-1,.my-1{margin-bottom:.25rem!important}
+.ml-1,.mx-1{margin-left:.25rem!important}
+.m-2{margin:.5rem!important}
+.mt-2,.my-2{margin-top:.5rem!important}
+.mr-2,.mx-2{margin-right:.5rem!important}
+.mb-2,.my-2{margin-bottom:.5rem!important}
+.ml-2,.mx-2{margin-left:.5rem!important}
+.m-3{margin:1rem!important}
+.mt-3,.my-3{margin-top:1rem!important}
+.mr-3,.mx-3{margin-right:1rem!important}
+.mb-3,.my-3{margin-bottom:1rem!important}
+.ml-3,.mx-3{margin-left:1rem!important}
+.m-4{margin:1.5rem!important}
+.mt-4,.my-4{margin-top:1.5rem!important}
+.mr-4,.mx-4{margin-right:1.5rem!important}
+.mb-4,.my-4{margin-bottom:1.5rem!important}
+.ml-4,.mx-4{margin-left:1.5rem!important}
+.m-5{margin:3rem!important}
+.mt-5,.my-5{margin-top:3rem!important}
+.mr-5,.mx-5{margin-right:3rem!important}
+.mb-5,.my-5{margin-bottom:3rem!important}
+.ml-5,.mx-5{margin-left:3rem!important}
+.m-auto{margin:auto!important}
+.mt-auto,.my-auto{margin-top:auto!important}
+.mr-auto,.mx-auto{margin-right:auto!important}
+.mb-auto,.my-auto{margin-bottom:auto!important}
+.ml-auto,.mx-auto{margin-left:auto!important}
+/*********************************************
+* PADDING
+*********************************************/ 
+.p-0{padding:0!important}
+.pt-0,.py-0{padding-top:0!important}
+.pr-0,.px-0{padding-right:0!important}
+.pb-0,.py-0{padding-bottom:0!important}
+.pl-0,.px-0{padding-left:0!important}
+.p-1{padding:.25rem!important}
+.pt-1,.py-1{padding-top:.25rem!important}
+.pr-1,.px-1{padding-right:.25rem!important}
+.pb-1,.py-1{padding-bottom:.25rem!important}
+.pl-1,.px-1{padding-left:.25rem!important}
+.p-2{padding:.5rem!important}
+.pt-2,.py-2{padding-top:.5rem!important}
+.pr-2,.px-2{padding-right:.5rem!important}
+.pb-2,.py-2{padding-bottom:.5rem!important}
+.pl-2,.px-2{padding-left:.5rem!important}
+.p-3{padding:1rem!important}
+.pt-3,.py-3{padding-top:1rem!important}
+.pr-3,.px-3{padding-right:1rem!important}
+.pb-3,.py-3{padding-bottom:1rem!important}
+.pl-3,.px-3{padding-left:1rem!important}
+.p-4{padding:1.5rem!important}
+.pt-4,.py-4{padding-top:1.5rem!important}
+.pr-4,.px-4{padding-right:1.5rem!important}
+.pb-4,.py-4{padding-bottom:1.5rem!important}
+.pl-4,.px-4{padding-left:1.5rem!important}
+.p-5{padding:3rem!important}
+.pt-5,.py-5{padding-top:3rem!important}
+.pr-5,.px-5{padding-right:3rem!important}
+.pb-5,.py-5{padding-bottom:3rem!important}
+.pl-5,.px-5{padding-left:3rem!important}
+/*********************************************
+* DISPLAY
+*********************************************/ 
+.d-none{display:none!important}
+.d-inline{display:inline!important}
+.d-inline-block{display:inline-block!important}
+.d-block{display:block!important}
+.d-table{display:table!important}
+.flex-wrap{flex-wrap: wrap;}
+.d-table-row{display:table-row!important}
+.d-table-cell{display:table-cell!important}
+.d-flex{display:-ms-flexbox!important;display:flex!important}
+.d-inline-flex{display:-ms-inline-flexbox!important;display:inline-flex!important}
+/*********************************************
+* JUSTIFY CONTENT
+*********************************************/ 
+.justify-content-start{-ms-flex-pack:start!important;justify-content:flex-start!important}
+.justify-content-end{-ms-flex-pack:end!important;justify-content:flex-end!important}
+.justify-content-center{-ms-flex-pack:center!important;justify-content:center!important}
+.justify-content-between{-ms-flex-pack:justify!important;justify-content:space-between!important}
+.justify-content-around{-ms-flex-pack:distribute!important;justify-content:space-around!important}
+.justify-content-evenly{-ms-flex-pack:distribute!important;justify-content:space-evenly!important}
+/*********************************************
+* ALIGN ITEMS
+*********************************************/ 
+.align-items-start{-ms-flex-align:start!important;align-items:flex-start!important}
+.align-items-end{-ms-flex-align:end!important;align-items:flex-end!important}
+.align-items-center{-ms-flex-align:center!important;align-items:center!important}
+.align-items-baseline{-ms-flex-align:baseline!important;align-items:baseline!important}
+.align-items-stretch{-ms-flex-align:stretch!important;align-items:stretch!important}
+/*********************************************
+* FLEX DIRECTION
+*********************************************/ 
+.flex-direction-column{flex-direction: column;}
+.flex-direction-row{flex-direction: row;}
+/*********************************************
+* TEXT ALIGN
+*********************************************/ 
+.text-align-left{text-align: left;}
+.text-align-center{text-align: center!important;}
+.text-align-justify{text-align: justify;}
+.text-align-right{text-align: right;}
+/*********************************************
+* CURSOR
+*********************************************/ 
+.cursor-pointer{ cursor: pointer; }
+.cursor-not-allowed{ cursor: not-allowed; }
+/*********************************************
+* VERTICAL ALIGN
+*********************************************/ 
+.vertical-align-middle{ vertical-align: middle; }
+/*********************************************
+* FONT
+*********************************************/ 
+.bold{font-weight: bolder;}

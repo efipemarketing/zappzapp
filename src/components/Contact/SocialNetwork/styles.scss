@@ -1,0 +1,8 @@
+@import "./../../../styles/variables";
+
+#social-network{
+    svg{
+        transition: all .5s;
+        &:hover{ color: $color-secondary; }
+    }
+}
