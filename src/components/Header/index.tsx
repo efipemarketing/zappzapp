@@ -10,7 +10,7 @@ export default function Header(){
 				<p className="color-medium mb-5">SEU ASSISTENTE FINANCEIRO DISPONÍVEL  24H POR DIA NO WHATSAPP 🤖</p>
 
 				<div className="buttons">
-					<button className="w-100" onClick={() => scrollTo("about-us", -66)}>Saber mais</button>
+					<button className="w-100" onClick={() => scrollTo("about-us", -66)}>Saiba mais</button>
 					<button className="w-100 light-outline">
 						<BsPlayCircle className="mr-1" /> Assistir Video
 					</button>
