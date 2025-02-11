@@ -5,12 +5,12 @@ import "./style.scss";
 const plans: PlanCardProps[] = [
 	 {
 		"active": true,
-		"type": "Plano Vitalicio",
+		"type": "Plano Anual",
 		"subTitle": "Mais Vendido",
 		"sign": "R$",
-		"amount":  60,
+		"amount":  45,
 		"amountLocale": "en-US",
-		"timeCourse": "lifetime",
+		"timeCourse": "anual",
 		"description": "ㅤㅤㅤㅤㅤㅤㅤㅤㅤ",
 		"benefits": [
 			"- Acesso imediato ao assistente!",
@@ -45,7 +45,7 @@ type PlanCardProps = {
 	"sign": "$"|"R$"
 	"amount": number
 	"amountLocale": "en-US"|"pt-BR"
-	"timeCourse": "month"|"year"|"mês"|"ano"|"lifetime"
+	"timeCourse": "month"|"year"|"mês"|"ano"|"anual"
 	"description": string
 	"benefits": string[]
 }
