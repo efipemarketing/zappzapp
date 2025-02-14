@@ -78,7 +78,7 @@ function PlanCardComponent({ active, type, subTitle, sign, amount, amountLocale,
 				<button
   type="button"
   className="w-75"
-  onClick={() => window.open('https://pay.kirvano.com/0a266a9d-e1cc-4757-b0fe-e049d556a496', '_blank')}
+  onClick={() => window.open('https://pay.kirvano.com/9e441765-6f09-4645-b072-0496007f312a', '_blank')}
 >
   Testar Agora
 </button>
