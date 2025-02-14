@@ -6,7 +6,7 @@ export default function Header(){
 	return (
 		<header id="header" className="container">
 			<div>
-				<h1>🚀 AssisZapp</h1>
+				<h1> AssisZapp</h1>
 				<p className="color-medium mb-5">SEU ASSISTENTE FINANCEIRO DISPONÍVEL  24H POR DIA NO WHATSAPP 🤖</p>
 
 				<div className="buttons">
